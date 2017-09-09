@@ -23,7 +23,7 @@ public class Student {
 	}
 	
 	public String getStudPrinter(){
-		return studMatrNr + " " + studName + " " + studSem + " " + studGrade + "\n"; 
+		return this.studMatrNr + " " + this.studName + " " + this.studSem + " " + this.studGrade + "\n"; 
 	}
 	
 	

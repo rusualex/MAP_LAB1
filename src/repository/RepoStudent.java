@@ -16,8 +16,9 @@ import domain.Student;
 public class RepoStudent extends Student {
 	public List<Student> studList = new ArrayList<Student>();
 
-	public void createStudent(int studMatrNr, String studName, int studSem, int studGrade) {
-		Student newStudent = new Student(studMatrNr, studName, studSem, studGrade);
+	public void createStudent(String studName, int studSem, int studGrade) {
+
+		Student newStudent = new Student(studList.size() + 1, studName, studSem, studGrade);
 		studList.add(newStudent);
 	}
 
@@ -32,8 +33,8 @@ public class RepoStudent extends Student {
 
 	public void deleteStudent(String studName) {
 		for (Iterator<Student> iter = studList.listIterator(); iter.hasNext();) {
-			Student removeCond = iter.next();
-			if (removeCond.getStudName() == studName) {
+			Student removeCondition = iter.next();
+			if (removeCondition.getStudName().equals(studName)) {
 				iter.remove();
 			}
 		}
