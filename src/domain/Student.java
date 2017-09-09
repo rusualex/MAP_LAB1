@@ -12,6 +12,21 @@ public class Student {
 	private String studName;
 	private int studSem;
 	private int studGrade;
+	
+	public Student(){};
+	
+	public Student(int studMatrNr, String studName, int studSem, int studGrade){
+		this.studMatrNr = studMatrNr;
+		this.studName = studName;
+		this.studSem = studSem;
+		this.studGrade = studGrade;
+	}
+	
+	public String getStudPrinter(){
+		return studMatrNr + " " + studName + " " + studSem + " " + studGrade + "\n"; 
+	}
+	
+	
 	/**
 	 * @return the studMatrNr
 	 */
