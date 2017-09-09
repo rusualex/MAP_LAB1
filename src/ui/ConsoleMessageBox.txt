@@ -1,0 +1,15 @@
+User interface
+
+Choose a number of the following, type it and press <Enter>!
+
+CRUD Operations:
+1 - Create Student;
+2 - List Students;
+3 - Update Student;
+4 - Delete Student;
+
+Filters:
+5 - Filter Students by Grade;
+
+Sorts:
+6 - Sort Students by Name;
