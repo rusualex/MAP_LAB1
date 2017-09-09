@@ -13,7 +13,7 @@ public class ControllerStudent extends RepoStudent{
 	public void studFilterGrade(int studGrade){
 		for (Student stud : studList) {
 			if(stud.getStudGrade() >= studGrade)
-				 System.out.println(getStudPrinter());
+				 System.out.println(stud.getStudPrinter());
 		}
 	}
 	
